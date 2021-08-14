@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*                                (( [ default ] ))                                */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,8 +10,186 @@
   text-decoration: none;
   list-style-type: none;
 }
-html {
+html,
+body {
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  background-color: #0a192f;
+  background-color: #1d2433;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+}
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+/*                                (( [ nav ] ))                                */
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 100px;
+}
+nav h1 {
+  user-select: none;
+  display: flex;
+  position: relative;
+  margin-left: 22px;
+  margin-right: 22px;
+  color: #6befdd;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+nav ul {
+  width: 400px;
+  display: flex;
+  margin-left: 22px;
+  margin-right: 22px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: #a2aabc;
+  font-weight: 600;
+  font-size: 16px;
+}
+nav a:hover {
+  color: #64ffda;
+}
+
+/*                                (( [ special ] ))                                */
+.container {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+}
+.content {
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+}
+.left-menu {
+  display: flex;
+  flex-direction: column-reverse;
+  position: fixed;
+  align-items: center;
+  left: 30px;
+  bottom: 100px;
+  width: 27px;
+  height: 150px;
+  justify-content: space-between;
+}
+.left-menu a {
+  display: flex;
+  width: 27px;
+  height: 27px;
+}
+.right-menu a {
+  display: flex;
+  width: 15px;
+  height: 15px;
+}
+.social-media {
+  fill: #7b86a4;
+}
+.social-media:hover {
+  fill: #2edbe3;
+}
+.right-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  right: 30px;
+  bottom: 100px;
+  width: 15px;
+  height: 150px;
+}
+/*                                (( [ first page ] ))                                */
+.head-title {
+  margin-top: 30px;
+  color: #ccd6f6;
+  width: 100%;
+  min-width: 600px;
+  max-width: 700px;
+  display: inline-block;
+  font-size: clamp(40px, 8vw, 70px);
+  line-height: 90px;
+}
+.head-desc {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 750px;
+  color: #7b86a4;
+  font-size: clamp(13px, 5vw, 18px);
+}
+.head-msg {
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+  display: inline-block;
+  color: #2edbe3;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 750px;
+}
+
+/*                                (( [ page ] ))                                */
+.page-title {
+  color: #ccd6f6;
+  font-size: clamp(30px, 4vw, 40px);
+}
+.page-desc {
+  margin-top: 25px;
+  width: 100%;
+  max-width: 700px;
+  color: #7b86a4;
+  font-size: 16px;
+  font-weight: 400;
+}
+.page-desc b {
+  color: #2edbe3;
+  font-weight: 300;
+}
+
+/*                                (( [ media ] ))                                */
+.project-container {
+  margin-top: 35px;
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  background-color: #242c3f;
+  border-radius: 20px;
+  z-index: 1;
+}
+/*                                (( [ media ] ))                                */
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 768px) {
+  .mobile-display {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1000) {
+  body,
+  html {
+    background-color: red;
+  }
 }
