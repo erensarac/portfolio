@@ -1,7 +1,8 @@
-function myFunction() {
+function lightMode() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("lightMode");
 }
-function myFunction2() {
-    document.getElementById("light-img").svg = "logo.svg";
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("darkMode");
 }
