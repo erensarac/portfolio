@@ -1,0 +1,40 @@
+nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    height: 100px;
+    h1 {
+        user-select: none;
+        display: flex;
+        position: relative;
+        margin-left: 22px;
+        margin-right: 22px;
+        color: var(--color-primary);
+        font-size: 1.4em;
+        font-weight: 500;
+    }
+    ul {
+        width: 400px;
+        display: flex;
+        margin-left: 22px;
+        margin-right: 22px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        color: var(--color-light);
+        font-weight: 600;
+        font-size: 16px;
+    }
+    a:hover {
+        color: var(--color-primary);
+    }
+    svg {
+        fill: var(--color-secondary);
+    }
+    svg:hover {
+        fill: var(--color-primary);
+    }
+}
