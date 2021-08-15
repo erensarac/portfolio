@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 /*                                (( [ default ] ))                                */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +21,6 @@ body {
 body {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar {
   width: 0;
@@ -31,9 +29,9 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #fff;
 }
-
-/*                                (( [ nav ] ))                                */
-
+/*=================================================================================================================
+        nav
+================================================================================================================= */
 nav {
   margin: 0 auto;
   display: flex;
@@ -48,7 +46,7 @@ nav h1 {
   position: relative;
   margin-left: 22px;
   margin-right: 22px;
-  color: #6befdd;
+  color: #2edbe3;
   font-size: 1.4em;
   font-weight: 600;
 }
@@ -66,7 +64,7 @@ nav a {
   font-size: 16px;
 }
 nav a:hover {
-  color: #64ffda;
+  color: #2edbe3;
 }
 
 /*                                (( [ special ] ))                                */
@@ -182,12 +180,46 @@ nav a:hover {
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 768px) {
+  .head-title {
+    margin: 0 auto;
+    min-width: 400px;
+    line-height: 60px;
+  }
+  .head-desc {
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .head-msg {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+  .page-desc {    
+    margin: 0 auto;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 400px;
+  }
   .mobile-display {
     display: none;
   }
+  .container{
+    min-height: 400px;
+    max-height: 500px;
+  }
+  .container-about-mobile{
+    max-height: 700px;
+  }
   .content {
     width: 100%;
+    max-height: 500px;
     text-align: center;
+    justify-content: center;
+  }
+  .page-title-work-mobile{
+    margin-top: 20px;
   }
 }
 @media screen and (max-width: 1000) {
