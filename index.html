@@ -10,43 +10,61 @@
 </head>
 <header>
     <nav class="" id="">
-        <div class="navbar-tittle">
-            <h1>Eren Saraç</h1>
+        <h1 class="animation-slideIn animation-delay-100ms">Eren Saraç</h1>
         </div>
         <div class="mobile-display">
             <ul class="navbar-list">
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Work</a></li>
-                <li><a href="#portfolio">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="animation-dropIn animation-delay-100ms"><a href="#about">About</a></li>
+                <li class="animation-dropIn animation-delay-200ms"><a href="#project">Work</a></li>
+                <li class="animation-dropIn animation-delay-300ms"><a href="#portfolio">Project</a></li>
+                <li class="animation-dropIn animation-delay-400ms"><a href="#contact">Contact</a></li>
+                <li class="animation-dropIn animation-delay-500ms"><a title="Change theme"
+                        style="cursor: pointer; display: flex; width: 24px; height: 24px;" onclick="myFunction()"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M20.742 13.045a8.088 8.088 0 0 1-2.077.271c-2.135 0-4.14-.83-5.646-2.336a8.025 8.025 0 0 1-2.064-7.723A1 1 0 0 0 9.73 2.034a10.014 10.014 0 0 0-4.489 2.582c-3.898 3.898-3.898 10.243 0 14.143a9.937 9.937 0 0 0 7.072 2.93 9.93 9.93 0 0 0 7.07-2.929 10.007 10.007 0 0 0 2.583-4.491 1.001 1.001 0 0 0-1.224-1.224zm-2.772 4.301a7.947 7.947 0 0 1-5.656 2.343 7.953 7.953 0 0 1-5.658-2.344c-3.118-3.119-3.118-8.195 0-11.314a7.923 7.923 0 0 1 2.06-1.483 10.027 10.027 0 0 0 2.89 7.848 9.972 9.972 0 0 0 7.848 2.891 8.036 8.036 0 0 1-1.484 2.059z">
+                            </path>
+                        </svg></a></li>
+                <li class="animation-dropIn animation-delay-600ms"><a title="Get resume"" href=" #" target="_blank"
+                        style="cursor: pointer; display:flex; width: 24px; height: 24px;"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            style="cursor: pointer; display: flex; width: 24px; height: 24px;">
+                            <path
+                                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c3.213 0 5.982 1.908 7.254 4.648a7.8 7.8 0 0 1-.895-.498c-.409-.258-.873-.551-1.46-.772-.669-.255-1.4-.378-2.234-.378s-1.565.123-2.234.377c-.587.223-1.051.516-1.472.781-.378.237-.703.443-1.103.594C9.41 8.921 8.926 9 8.33 9c-.595 0-1.079-.079-1.524-.248-.4-.151-.728-.358-1.106-.598-.161-.101-.34-.208-.52-.313C6.587 5.542 9.113 4 12 4zm0 16c-4.411 0-8-3.589-8-8 0-.81.123-1.59.348-2.327.094.058.185.11.283.173.411.26.876.554 1.466.776.669.255 1.399.378 2.233.378.833 0 1.564-.123 2.235-.377.587-.223 1.051-.516 1.472-.781.378-.237.703-.443 1.103-.595.445-.168.929-.247 1.525-.247s1.08.079 1.525.248c.399.15.725.356 1.114.602.409.258.873.551 1.46.773.363.138.748.229 1.153.291.049.357.083.717.083 1.086 0 4.411-3.589 8-8 8z">
+                            </path>
+                            <circle cx="8.5" cy="13.5" r="1.5"></circle>
+                            <circle cx="15.5" cy="13.5" r="1.5"></circle>
+                        </svg></a></li>
             </ul>
         </div>
     </nav>
 </header>
+<section class="loader"></section>
 
 <body>
     <div class="left-menu mobile-display">
-        <div class="linkedin" title="LinkedIn"><a href="#"><svg class="social-media" xmlns="http://www.w3.org/2000/svg"
-                    width="27" height="27" viewBox="0 0 24 24">
+        <div class="linkedin animation-fadeIn animation-delay-100ms" title="LinkedIn"><a href="#"><svg
+                    class="social-media" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
                     <circle cx="4.983" cy="5.009" r="2.188"></circle>
                     <path
                         d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
                     </path>
                 </svg></a></div>
-        <div class="github" title="GitHub"><a href="#"><svg class="social-media" xmlns="http://www.w3.org/2000/svg"
-                    width="27" height="27" viewBox="0 0 24 24">
+        <div class="github animation-fadeIn animation-delay-200ms" title="GitHub"><a href="#"><svg class="social-media"
+                    xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
                     </path>
                 </svg></a></div>
-        <div class="twitter" title="Twitter"><a href="#"><svg class="social-media" xmlns="http://www.w3.org/2000/svg"
-                    width="27" height="27" viewBox="0 0 24 24">
+        <div class="twitter animation-fadeIn animation-delay-300ms" title="Twitter"><a href="#"><svg
+                    class="social-media" xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
                     <path
                         d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
                     </path>
                 </svg></a></div>
-        <div class="instagram" title="Instagram"><a href="#"><svg class="social-media"
-                    xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24">
+        <div class="instagram" title="Instagram"><a href="#"><svg
+                    class="animation-fadeIn animation-delay-400ms social-media" xmlns="http://www.w3.org/2000/svg"
+                    width="27" height="27" viewBox="0 0 24 24">
                     <path
                         d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
                     </path>
@@ -58,20 +76,20 @@
     </div>
     <div class="right-menu mobile-display">
         <a href="#about"><svg class="social-media" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                viewBox="0 0 24 24">
-                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
+                viewBox="0 0 24 24" transform="rotate(45)">
+                <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path>
             </svg></a>
         <a href="#work"><svg class="social-media" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                viewBox="0 0 24 24">
-                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
+                viewBox="0 0 24 24" transform="rotate(45)">
+                <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path>
             </svg></a>
         <a href="#project"><svg class="social-media" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                viewBox="0 0 24 24">
-                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
+                viewBox="0 0 24 24" transform="rotate(45)">
+                <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path>
             </svg></a>
         <a href="#contact"><svg class="social-media" xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                viewBox="0 0 24 24">
-                <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2z"></path>
+                viewBox="0 0 24 24" transform="rotate(45)">
+                <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path>
             </svg></a>
     </div>
     <div class="container">
@@ -105,7 +123,13 @@
     <div class="container">
         <div class="content">
             <h2 class="page-title page-title-work-mobile">Work</h2>
-            <p class="page-desc" style="font-size: 18px; margin-top: 10px;">Coming soon..</p>
+            <p class="page-desc" style="font-size: 16px; margin-top: 10px;">Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Ipsum numquam aperiam obcaecati nulla voluptate ex hic iusto, voluptatibus fugit
+                eveniet, corporis officiis animi autem accusamus sapiente repellendus fuga ad cumque! Eaque repudiandae
+                nemo magnam dignissimos.</p>
+            <a href="#">
+                <p class="page-desc page-contact-button"><b>Hire me!</b></p>
+            </a>
         </div>
     </div>
     <a name="project"></a>
@@ -129,5 +153,14 @@
         </div>
     </div>
 </body>
+<script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+    function myFunction2() {
+        document.getElementById("light-img").svg = "logo.svg";
+    }
+</script>
 
 </html>
