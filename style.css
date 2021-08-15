@@ -14,7 +14,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  background-color: #1d2433;
+  background-color: red;
   overflow: scroll;
   overflow-x: hidden;
 }
@@ -192,7 +192,10 @@ nav a:hover {
     max-width: 400px;
   }
   .head-msg {
-    margin: 0 auto;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
     width: 100%;
     max-width: 400px;
   }
