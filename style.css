@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +40,6 @@
     </nav>
 </header>
 <section class="loader"></section>
-
 <body>
     <div class="left-menu mobile-display">
         <div class="linkedin animation-fadeIn animation-delay-100ms" title="LinkedIn"><a href="#"><svg
@@ -154,5 +152,4 @@
         </div>
     </div>
 </body>
-
 </html>
