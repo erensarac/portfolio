@@ -3,15 +3,23 @@
 
 
 :root{
-  --color-primary: #0bd8a2;/*#2edbe3;*/
-  --color-secondary: #7b86a4;
-  --color-dark: #1d2433; /*423f6a*/
-  --color-light: #c2cee9;
+  --color-primary: hsl(164, 90%, 45%);/*#2edbe3;*/
+  --color-secondary: hsl(224, 18%, 56%);
+  --color-dark: hsl(221, 28%, 16%); /*423f6a*/
+  --color-light: hsl(222, 47%, 84%);
 }
 ::selection{
-  color: #56aa94;
-  background-color: #7b86a45d;
+  color: hsl(164, 33%, 50%);
+  background-color: hsla(224, 18%, 56%, 0.365);
 }
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(0, 0%, 100%);
+}
+
 /*                                (( [ default ] ))                                */
 * {
   box-sizing: border-box;
@@ -20,8 +28,7 @@
   text-decoration: none;
   list-style-type: none;
 }
-html,
-body {
+html {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
@@ -33,17 +40,12 @@ body {
   width: 100%;
   height: 100vh;
 }
-::-webkit-scrollbar {
-  width: 0;
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #fff;
-}
+
+
 /*=================================================================================================================
         nav
 ================================================================================================================= */
-nav {
+/*nav {
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -82,7 +84,7 @@ nav svg {
 }
 nav svg:hover {
   fill: var(--color-primary);
-}
+}*/
 
 /*                                (( [ special ] ))                                */
 .container {
@@ -161,6 +163,26 @@ nav svg:hover {
   width: 100%;
   max-width: 750px;
 }
+
+/*
+.about-container h2 {
+  color: var(--color-light);
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.about-container p {  
+  margin-top: 25px;
+  width: 100%;
+  max-width: 700px;
+  color: var(--color-secondary);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about-container p>b {
+  color: var(--color-primary);
+  font-weight: 300;
+}*/
 
 /*                                (( [ page ] ))                                */
 .page-title {
