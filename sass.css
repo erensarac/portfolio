@@ -13,6 +13,7 @@ nav {
 }
 
 nav h1 {
+  color: var(--color-primary);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -23,7 +24,6 @@ nav h1 {
   position: relative;
   margin-left: 22px;
   margin-right: 22px;
-  color: var(--color-primary);
   font-size: 1.4em;
   font-weight: 500;
 }
@@ -61,21 +61,172 @@ nav svg:hover {
   fill: var(--color-primary);
 }
 
+.left-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: fixed;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50px;
+  bottom: 100px;
+  width: 27px;
+  height: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.left-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 27px;
+  height: 27px;
+}
+
+.right-menu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 50px;
+  bottom: 115px;
+  width: 15px;
+  height: 120px;
+}
+
+.right-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15px;
+  height: 15px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  min-height: 650px;
+}
+
+.container .content {
+  margin: 0 auto;
+  width: 70%;
+  height: 100vh;
+}
+
+.head-container h1 {
+  color: var(--color-light);
+  margin-top: 30px;
+  width: 100%;
+  min-width: 600px;
+  max-width: 700px;
+  display: inline-block;
+  font-size: clamp(40px, 8vw, 70px);
+  line-height: 90px;
+}
+
+.head-container p {
+  color: var(--color-secondary);
+  margin-top: 30px;
+  width: 100%;
+  max-width: 750px;
+  font-size: clamp(13px, 5vw, 18px);
+}
+
+.head-container p > b {
+  color: var(--color-primary);
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  max-width: 750px;
+}
+
 .about-container h2 {
   color: var(--color-light);
   font-size: clamp(30px, 4vw, 40px);
 }
 
 .about-container p {
+  color: var(--color-secondary);
   margin-top: 25px;
   width: 100%;
   max-width: 700px;
-  color: var(--color-secondary);
   font-size: 16px;
   font-weight: 400;
 }
 
 .about-container p > b {
+  color: var(--color-primary);
+  font-weight: 300;
+}
+
+.work-container h2 {
+  color: var(--color-light);
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.work-container p {
+  color: var(--color-secondary);
+  margin-top: 10px;
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.work-container a > p {
+  margin-top: 10px;
+}
+
+.work-container a > p > b {
+  color: var(--color-primary);
+  font-weight: 300;
+}
+
+.project-container h2 {
+  color: var(--color-light);
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.contact-container h2 {
+  color: var(--color-light);
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.contact-container p {
+  color: var(--color-secondary);
+  margin-top: 10px;
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.contact-container a > p {
+  margin-top: 10px;
+}
+
+.contact-container a > p > b {
   color: var(--color-primary);
   font-weight: 300;
 }
