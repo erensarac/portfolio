@@ -62,7 +62,6 @@ nav {
         height: 27px;
     }
 }
-
 .right-menu {
     position: fixed;
     display: flex;
@@ -103,7 +102,8 @@ nav {
         display: inline-block;
         font-size: clamp(40px, 8vw, 70px);
         line-height: 90px;
-  }
+    }
+
     p {
         color: var(--color-secondary);
         margin-top: 30px;
@@ -111,6 +111,7 @@ nav {
         max-width: 750px;
         font-size: clamp(13px, 5vw, 18px);
     }
+
     p > b {
         color: var(--color-primary);
         margin-top: 10px;
@@ -120,7 +121,7 @@ nav {
         font-weight: 500;
         width: 100%;
         max-width: 750px;
-  }
+    }
 }
 
 .about-container {
@@ -149,6 +150,7 @@ nav {
         color: var(--color-light);
         font-size: clamp(30px, 4vw, 40px);
     }
+
     p {
         color: var(--color-secondary);
         margin-top: 10px;
@@ -157,9 +159,11 @@ nav {
         font-size: 16px;
         font-weight: 400;
     }
+
     a > p {
         margin-top: 10px;
     }
+
     a > p > b {
         color: var(--color-primary);
         font-weight: 300;
@@ -178,6 +182,7 @@ nav {
         color: var(--color-light);
         font-size: clamp(30px, 4vw, 40px); 
     }
+
     p {
         color: var(--color-secondary);
         margin-top: 10px;
@@ -186,9 +191,11 @@ nav {
         font-size: 16px;
         font-weight: 400;
     }
+
     a > p {
         margin-top: 10px;
     }
+    
     a > p > b {
         color: var(--color-primary);
         font-weight: 300;
