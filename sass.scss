@@ -1,24 +1,54 @@
+$color-background: #1222;
+$color-white: #ace6f6;
+$color-grey: #17b978;
+$color-green: #21e6c1;
+$color-green2: #21e6c1;
+$color-green3: #21e6c1;
+
+
+html {
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    
+    body {
+        background-color: #fff;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
 nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 95%;
-    height: 100px;
+    width: 100%;
+    height: 5em;
 
     h1 {
-        color: var(--color-primary);
-        user-select: none;
+        color: #5d13e7;
         display: flex;
         position: relative;
         margin-left: 22px;
         margin-right: 22px;
         font-size: 1.4em;
-        font-weight: 500;
+        font-weight: 600;
+        user-select: none;
     }
 
     ul {
-        width: 400px;
+        width: 300px; /*old version: 400px;*/
         display: flex;
         margin-left: 22px;
         margin-right: 22px;
@@ -27,21 +57,16 @@ nav {
     }
 
     a {
-        color: var(--color-light);
+        color: #3a506b;
         font-weight: 600;
         font-size: 16px;
-    }
 
-    a:hover {
-        color: var(--color-primary);
-    }
-
-    svg {
-        fill: var(--color-secondary);
-    }
-
-    svg:hover {
-        fill: var(--color-primary);
+        &:hover {
+            color: #5d13e7;
+        }
+        &:active {
+            color: #5010c7;
+        }
     }
 }
 
@@ -53,7 +78,7 @@ nav {
     left: 50px;
     bottom: 100px;
     width: 27px;
-    height: 150px;
+    height: 200px;
     justify-content: space-between;
 
     a {
@@ -62,6 +87,7 @@ nav {
         height: 27px;
     }
 }
+
 .right-menu {
     position: fixed;
     display: flex;
@@ -94,7 +120,7 @@ nav {
 
 .head-container {
     h1 {
-        color: var(--color-light);
+        color: hsl(261, 90%, 49%);
         margin-top: 30px; 
         width: 100%;
         min-width: 600px;
@@ -105,7 +131,7 @@ nav {
     }
 
     p {
-        color: var(--color-secondary);
+        color: $color-grey;
         margin-top: 30px;
         width: 100%;
         max-width: 750px;
@@ -113,7 +139,7 @@ nav {
     }
 
     p > b {
-        color: var(--color-primary);
+        color: #5d13e7;
         margin-top: 10px;
         font-family: "Roboto Mono", monospace;
         display: inline-block;
@@ -126,12 +152,12 @@ nav {
 
 .about-container {
     h2 {
-        color: var(--color-light);
+        color: #5d13e7;
         font-size: clamp(30px, 4vw, 40px);
     }
   
     p {  
-        color: var(--color-secondary);
+        color: $color-grey;
         margin-top: 25px;
         width: 100%;
         max-width: 700px;
@@ -140,19 +166,19 @@ nav {
     }
   
     p > b {
-        color: var(--color-primary);
+        color: #5d13e7;
         font-weight: 300;
     }
 }
 
 .work-container {
     h2 {
-        color: var(--color-light);
+        color: #5d13e7;
         font-size: clamp(30px, 4vw, 40px);
     }
 
     p {
-        color: var(--color-secondary);
+        color: $color-grey;
         margin-top: 10px;
         width: 100%;
         max-width: 700px;   
@@ -165,26 +191,26 @@ nav {
     }
 
     a > p > b {
-        color: var(--color-primary);
+        color: #5d13e7;
         font-weight: 300;
     }
 }
 
 .project-container {
     h2 {
-        color: var(--color-light);
+        color: #5d13e7;
         font-size: clamp(30px, 4vw, 40px);
     }
 }
 
 .contact-container {
     h2 {
-        color: var(--color-light);
+        color: #5d13e7;
         font-size: clamp(30px, 4vw, 40px); 
     }
 
     p {
-        color: var(--color-secondary);
+        color: $color-grey;
         margin-top: 10px;
         width: 100%;
         max-width: 700px;   
@@ -195,9 +221,17 @@ nav {
     a > p {
         margin-top: 10px;
     }
-    
+
     a > p > b {
-        color: var(--color-primary);
+        color: #5d13e7;
         font-weight: 300;
+    }
+}
+
+svg {
+    fill: #8e9092;
+
+    &:hover {
+        fill: #5d13e7;
     }
 }
