@@ -20,7 +20,6 @@
   background: hsl(0, 0%, 100%);
 }
 
-/*                                (( [ default ] ))                                */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,181 +40,17 @@ body {
   height: 100vh;
 }
 
-
-/*=================================================================================================================
-        nav
-================================================================================================================= */
-/*nav {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 95%;
-  height: 100px;
-}
-nav h1 {
-  user-select: none;
-  display: flex;
-  position: relative;
-  margin-left: 22px;
-  margin-right: 22px;
-  color: var(--color-primary);
-  font-size: 1.4em;
-  font-weight: 500;
-}
-nav ul {
-  width: 400px;
-  display: flex;
-  margin-left: 22px;
-  margin-right: 22px;
-  justify-content: space-between;
-  align-items: center;
-}
-nav a {
-  color: var(--color-light);
-  font-weight: 600;
-  font-size: 16px;
-}
-nav a:hover {
-  color: var(--color-primary);
-}
-nav svg {
-  fill: var(--color-secondary);
-}
-nav svg:hover {
-  fill: var(--color-primary);
-}*/
-
 /*                                (( [ special ] ))                                */
-.container {
-  width: 100%;
-  height: 100vh;
-  min-height: 650px;
-}
-.content {
-  margin: 0 auto;
-  width: 70%;
-  height: 100vh;
-}
-.left-menu {
-  display: flex;
-  flex-direction: column-reverse;
-  position: fixed;
-  align-items: center;
-  left: 50px;
-  bottom: 100px;
-  width: 27px;
-  height: 150px;
-  justify-content: space-between;
-}
-.left-menu a {
-  display: flex;
-  width: 27px;
-  height: 27px;
-}
-.right-menu a {
-  display: flex;
-  width: 15px;
-  height: 15px;
-}
-.social-media {
+
+svg {
   fill: var(--color-secondary);
 }
-.social-media:hover {
+svg:hover {
   fill: var(--color-primary);
-}
-.right-menu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  right: 50px;
-  bottom: 115px;
-  width: 15px;
-  height: 120px;
-}
-/*                                (( [ first page ] ))                                */
-.head-title {
-  margin-top: 30px;
-  color: var(--color-light);
-  width: 100%;
-  min-width: 600px;
-  max-width: 700px;
-  display: inline-block;
-  font-size: clamp(40px, 8vw, 70px);
-  line-height: 90px;
-}
-.head-desc {
-  margin-top: 30px;
-  width: 100%;
-  max-width: 750px;
-  color: var(--color-secondary);
-  font-size: clamp(13px, 5vw, 18px);
-}
-.head-msg {
-  margin-top: 20px;
-  font-family: "Roboto Mono", monospace;
-  display: inline-block;
-  color: var(--color-primary);
-  font-size: 16px;
-  font-weight: 500;
-  width: 100%;
-  max-width: 750px;
-}
-
-/*
-.about-container h2 {
-  color: var(--color-light);
-  font-size: clamp(30px, 4vw, 40px);
-}
-
-.about-container p {  
-  margin-top: 25px;
-  width: 100%;
-  max-width: 700px;
-  color: var(--color-secondary);
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.about-container p>b {
-  color: var(--color-primary);
-  font-weight: 300;
-}*/
-
-/*                                (( [ page ] ))                                */
-.page-title {
-  color: var(--color-light);
-  font-size: clamp(30px, 4vw, 40px);
-}
-.page-desc {
-  margin-top: 25px;
-  width: 100%;
-  max-width: 700px;
-  color: var(--color-secondary);
-  font-size: 16px;
-  font-weight: 400;
-}
-.page-desc b {
-  color: var(--color-primary);
-  font-weight: 300;
-}
-.page-contact-button {
-  margin-top: 15px;
 }
 /*========================================================================================================
 ========================================================================================================*/
 /*                                (( [ media ] ))                                */
-.project-container {
-  margin-top: 35px;
-  width: 100%;
-  max-width: 700px;
-  height: 400px;
-  background-color: var(--color-dark);
-  border-radius: 20px;
-  z-index: 1;
-}
 /*========================================================================================================
 Media
 ========================================================================================================*/
