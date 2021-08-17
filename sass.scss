@@ -116,38 +116,56 @@ nav {
         width: 70%;
         height: 100vh;
     }
+
+    .head-page-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 95%;
+        height: 100vh;
+        background-color: #5010c7;
+        border-radius: 10px;
+    }
 }
 
 .head-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1 {
-        color: hsl(261, 90%, 49%);
+        color: #fff;
         margin-top: 30px; 
         width: 100%;
         min-width: 600px;
-        max-width: 700px;
+        max-width: 800px;
+        height: 200px;
         display: inline-block;
-        font-size: clamp(40px, 8vw, 70px);
+        font-size: clamp(40px, 8vw, 80px);
         line-height: 90px;
+        position: relative;
+        top: 10%;
     }
 
     p {
-        color: $color-grey;
-        margin-top: 30px;
+        display: inline-block;
+        color: #ffffffa4;
+        margin-top: 10px;
         width: 100%;
         max-width: 750px;
         font-size: clamp(13px, 5vw, 18px);
+        position: relative;
+        top: 10%;
     }
 
-    p > b {
-        color: #5d13e7;
-        margin-top: 10px;
-        font-family: "Roboto Mono", monospace;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: 500;
-        width: 100%;
-        max-width: 750px;
+    a {
+        position: relative;
+        top: 20%;
     }
+
+    svg {
+        fill: #fff;
+    }
+
 }
 
 .about-container {
@@ -157,10 +175,10 @@ nav {
     }
   
     p {  
-        color: $color-grey;
+        color: #3a506b;
         margin-top: 25px;
         width: 100%;
-        max-width: 700px;
+        max-width: 600px;
         font-size: 16px;
         font-weight: 400;
     }
@@ -196,17 +214,28 @@ nav {
     }
 }
 
-.project-container {
-    h2 {
-        color: #5d13e7;
-        font-size: clamp(30px, 4vw, 40px);
+svg {
+    fill: #8e9092;
+
+    &:hover {
+        fill: #5d13e7;
     }
 }
 
-.contact-container {
+
+
+
+
+
+
+
+footer {
+    width: 100vw;
+    height: 100vh;
+    background-color: #5010c7;
     h2 {
         color: #5d13e7;
-        font-size: clamp(30px, 4vw, 40px); 
+        font-size: clamp(30px, 4vw, 40px);
     }
 
     p {
@@ -216,22 +245,5 @@ nav {
         max-width: 700px;   
         font-size: 16px;
         font-weight: 400;
-    }
-
-    a > p {
-        margin-top: 10px;
-    }
-
-    a > p > b {
-        color: #5d13e7;
-        font-weight: 300;
-    }
-}
-
-svg {
-    fill: #8e9092;
-
-    &:hover {
-        fill: #5d13e7;
     }
 }
