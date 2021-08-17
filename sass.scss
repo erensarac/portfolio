@@ -202,20 +202,9 @@ svg {
 
 
 footer {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     background-color: #5010c7;
-    h2 {
-        color: #5d13e7;
-        font-size: clamp(30px, 4vw, 40px);
-    }
-
-    p {
-        color: $color-grey;
-        margin-top: 10px;
-        width: 100%;
-        max-width: 700px;   
-        font-size: 16px;
-        font-weight: 400;
-    }
 }
