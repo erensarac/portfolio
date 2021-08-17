@@ -82,64 +82,6 @@ nav a:active {
   color: #5010c7;
 }
 
-.left-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  position: fixed;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  left: 50px;
-  bottom: 100px;
-  width: 27px;
-  height: 200px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.left-menu a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 27px;
-  height: 27px;
-}
-
-.right-menu {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  right: 50px;
-  bottom: 115px;
-  width: 15px;
-  height: 120px;
-}
-
-.right-menu a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 15px;
-  height: 15px;
-}
-
 .container {
   width: 100%;
   height: 100vh;
@@ -214,7 +156,8 @@ nav a:active {
 }
 
 .about-container p {
-  color: #3a506b;
+  display: inline-block;
+  color: #1d1e1f;
   margin-top: 25px;
   width: 100%;
   max-width: 600px;
@@ -224,7 +167,14 @@ nav a:active {
 
 .about-container p > b {
   color: #5d13e7;
-  font-weight: 300;
+  font-weight: 500;
+}
+
+.about-container div {
+  display: inline-block;
+  background-color: #5010c7;
+  width: 300px;
+  height: 700px;
 }
 
 .work-container h2 {
@@ -255,7 +205,7 @@ svg {
 }
 
 svg:hover {
-  fill: #5d13e7;
+  fill: #fff;
 }
 
 footer {
