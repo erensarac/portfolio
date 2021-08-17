@@ -152,34 +152,60 @@ nav a:active {
   height: 100vh;
 }
 
+.container .head-page-container {
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  height: 100vh;
+  background-color: #5010c7;
+  border-radius: 10px;
+}
+
+.head-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .head-container h1 {
-  color: #5b0ced;
+  color: #fff;
   margin-top: 30px;
   width: 100%;
   min-width: 600px;
-  max-width: 700px;
+  max-width: 800px;
+  height: 200px;
   display: inline-block;
-  font-size: clamp(40px, 8vw, 70px);
+  font-size: clamp(40px, 8vw, 80px);
   line-height: 90px;
+  position: relative;
+  top: 10%;
 }
 
 .head-container p {
-  color: #17b978;
-  margin-top: 30px;
+  display: inline-block;
+  color: #ffffffa4;
+  margin-top: 10px;
   width: 100%;
   max-width: 750px;
   font-size: clamp(13px, 5vw, 18px);
+  position: relative;
+  top: 10%;
 }
 
-.head-container p > b {
-  color: #5d13e7;
-  margin-top: 10px;
-  font-family: "Roboto Mono", monospace;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 500;
-  width: 100%;
-  max-width: 750px;
+.head-container a {
+  position: relative;
+  top: 20%;
+}
+
+.head-container svg {
+  fill: #fff;
 }
 
 .about-container h2 {
@@ -188,10 +214,10 @@ nav a:active {
 }
 
 .about-container p {
-  color: #17b978;
+  color: #3a506b;
   margin-top: 25px;
   width: 100%;
-  max-width: 700px;
+  max-width: 600px;
   font-size: 16px;
   font-weight: 400;
 }
@@ -224,39 +250,31 @@ nav a:active {
   font-weight: 300;
 }
 
-.project-container h2 {
-  color: #5d13e7;
-  font-size: clamp(30px, 4vw, 40px);
-}
-
-.contact-container h2 {
-  color: #5d13e7;
-  font-size: clamp(30px, 4vw, 40px);
-}
-
-.contact-container p {
-  color: #17b978;
-  margin-top: 10px;
-  width: 100%;
-  max-width: 700px;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.contact-container a > p {
-  margin-top: 10px;
-}
-
-.contact-container a > p > b {
-  color: #5d13e7;
-  font-weight: 300;
-}
-
 svg {
   fill: #8e9092;
 }
 
 svg:hover {
   fill: #5d13e7;
+}
+
+footer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5010c7;
+}
+
+footer h2 {
+  color: #5d13e7;
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+footer p {
+  color: #17b978;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 700px;
+  font-size: 16px;
+  font-weight: 400;
 }
 /*# sourceMappingURL=sass.css.map */
