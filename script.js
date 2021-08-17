@@ -1,9 +1,10 @@
-function lightMode1() {
+function lightMode() {
     var element = document.body;
     element.classList.toggle("lightMode");
 }
-function darkMod2e() {
+function darkMode() {
     var element = document.body;
     element.classList.toggle("darkMode");
 }
+
 
