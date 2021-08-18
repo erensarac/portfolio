@@ -22,7 +22,7 @@ html body {
   height: 100vh;
 }
 
-nav {
+header nav {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -36,7 +36,7 @@ nav {
   height: 5em;
 }
 
-nav h1 {
+header nav h1 {
   color: #5d13e7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,9 +52,8 @@ nav h1 {
           user-select: none;
 }
 
-nav ul {
+header nav ul {
   width: 300px;
-  /*old version: 400px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,17 +67,17 @@ nav ul {
           align-items: center;
 }
 
-nav a {
+header nav a {
   color: #3a506b;
   font-weight: 600;
   font-size: 16px;
 }
 
-nav a:hover {
+header nav a:hover {
   color: #5d13e7;
 }
 
-nav a:active {
+header nav a:active {
   color: #5010c7;
 }
 
@@ -88,22 +87,8 @@ nav a:active {
   min-height: 650px;
 }
 
-.container .content {
-  margin: 0 auto;
-  width: 70%;
-  height: 100vh;
-}
-
-.container .head-page-container {
-  text-align: center;
-  margin: 0 auto;
-  width: 95%;
-  height: 100vh;
+.head-page-container {
   background-color: #5010c7;
-  border-radius: 10px;
-}
-
-.head-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +99,14 @@ nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 95%;
+  height: 100vh;
+  border-radius: 10px;
 }
 
-.head-container h1 {
+.head-page-container h1 {
   color: #fff;
   margin-top: 30px;
   width: 100%;
@@ -130,9 +120,9 @@ nav a:active {
   top: 10%;
 }
 
-.head-container p {
-  display: inline-block;
+.head-page-container p {
   color: #ffffffa4;
+  display: inline-block;
   margin-top: 10px;
   width: 100%;
   max-width: 750px;
@@ -141,23 +131,30 @@ nav a:active {
   top: 10%;
 }
 
-.head-container a {
+.head-page-container a {
   position: relative;
   top: 20%;
 }
 
-.head-container svg {
+.head-page-container svg {
   fill: #fff;
+}
+
+.about-container {
+  margin: 0 auto;
+  width: 75%;
+  height: 100vh;
 }
 
 .about-container h2 {
   color: #5d13e7;
+  margin-top: 5%;
   font-size: clamp(30px, 4vw, 40px);
 }
 
 .about-container p {
-  display: inline-block;
   color: #1d1e1f;
+  display: inline-block;
   margin-top: 25px;
   width: 100%;
   max-width: 600px;
@@ -170,20 +167,20 @@ nav a:active {
   font-weight: 500;
 }
 
-.about-container div {
-  display: inline-block;
-  background-color: #5010c7;
-  width: 300px;
-  height: 700px;
+.work-container {
+  margin: 0 auto;
+  width: 75%;
+  height: 100vh;
 }
 
 .work-container h2 {
   color: #5d13e7;
+  margin-top: 5%;
   font-size: clamp(30px, 4vw, 40px);
 }
 
 .work-container p {
-  color: #17b978;
+  color: #292929;
   margin-top: 10px;
   width: 100%;
   max-width: 700px;
@@ -200,15 +197,8 @@ nav a:active {
   font-weight: 300;
 }
 
-svg {
-  fill: #8e9092;
-}
-
-svg:hover {
-  fill: #fff;
-}
-
 footer {
+  background-color: #5010c7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,6 +208,5 @@ footer {
           flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: #5010c7;
 }
 /*# sourceMappingURL=sass.css.map */
