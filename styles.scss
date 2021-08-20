@@ -145,6 +145,7 @@ header {
     .parag {
         display: flex;
         flex-direction: column;
+        gap: 35px;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -162,7 +163,6 @@ header {
         b {
             color: #5d13e7;
             font-weight: 600;
-            /*background-color: yellow;*/
         }
     }
 }
@@ -191,14 +191,14 @@ header {
 
     .parag {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        gap: 20px;
         justify-content: center;
         align-items: center;
         text-align: left;
         width: 100%;
         max-width: 800px;
         height: 400px;
-        /*background-color: red;*/
 
         p {
             margin: 2px;
@@ -206,11 +206,7 @@ header {
             font-size: clamp(16px, 1vw, 16px);
             /*background-color: blue;*/
         }
-
-
     }
-
-
 }
 
 .project-container {
@@ -245,7 +241,7 @@ header {
         max-width: 800px;
         height: 400px;
 
-        div {
+        #project-id-first {
             background: linear-gradient(#5d13e7, #5d13e7a9), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
             background-size: cover;
             background-position: center;
