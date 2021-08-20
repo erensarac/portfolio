@@ -7,4 +7,8 @@ function darkMode() {
     element.classList.toggle("darkMode");
 }
 
+function langSelect() {
+    var element = document.body;
+    element.classList.toggle("langSelect");
+
 
