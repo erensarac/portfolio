@@ -188,6 +188,7 @@ header nav a:active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 35px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -255,10 +256,11 @@ header nav a:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -269,7 +271,6 @@ header nav a:active {
   width: 100%;
   max-width: 800px;
   height: 400px;
-  /*background-color: red;*/
 }
 
 .work-container .parag p {
@@ -337,7 +338,7 @@ header nav a:active {
   height: 400px;
 }
 
-.project-container .parag div {
+.project-container .parag #project-id-first {
   background: -webkit-gradient(linear, left top, left bottom, from(#5d13e7), to(#5d13e7a9)), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
   background: linear-gradient(#5d13e7, #5d13e7a9), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
   background-size: cover;
@@ -352,7 +353,7 @@ header nav a:active {
   border-radius: 20px;
 }
 
-.project-container .parag div:hover {
+.project-container .parag #project-id-first:hover {
   background: url(https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png);
   background-size: cover;
   background-position: center;
