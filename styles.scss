@@ -115,8 +115,11 @@ header {
                 &:active {
                     color: #212121;
                 }
+
             }
+
         }
+
     }
 
     h1 {
@@ -156,7 +159,6 @@ header {
     justify-content: center;
     text-align: center;
     align-items: center;
-    /*background-color: palevioletred;*/
 
     .title {
         display: flex;
@@ -378,8 +380,66 @@ header {
 }
 
 footer {
+    position: relative;
+    display: flex;
+    bottom: 15px;
     margin: 0 auto;
     background-color: #5010c7;
-    width: 100%;
-    height: 15px;
+    width: 85%;
+    height: 40px;
+    border-radius: 10px;
+
+    .footer-text {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h5 {
+            color: #fff;
+            font-weight: 400;
+            font-size: clamp(15px, 1vw, 17px);
+            ;
+        }
+    }
+
+    .footer-back-to-top {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+            width: 25px;
+            height: 25px;
+
+            &:active {
+                background-color: #430ea5;
+                border-radius: 50%;
+            }
+        }
+
+
+    }
+
+    .footer-social-link {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            width: 27px;
+            height: 27px;
+        }
+
+        svg {
+            fill: #fff;
+
+            &:hover {
+                fill: #d8d6db;
+            }
+        }
+    }
 }
