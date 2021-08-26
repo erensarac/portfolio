@@ -37,7 +37,7 @@ header nav {
 }
 
 header nav h1 {
-  color: #5d13e7;
+  color: #0671dd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,11 +74,11 @@ header nav a {
 }
 
 header nav a:hover {
-  color: #5d13e7;
+  color: #0671dd;
 }
 
 header nav a:active {
-  color: #5010c7;
+  color: #023e7d;
 }
 
 .container {
@@ -88,7 +88,8 @@ header nav a:active {
 }
 
 .head-page-container {
-  background-color: #5010c7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0671dd), to(#023e7d));
+  background: linear-gradient(#0671dd, #023e7d);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,7 +131,7 @@ header nav a:active {
 
 .head-page-container .buttons .resume-button a,
 .head-page-container .buttons .explore-button a {
-  color: #3810c7;
+  color: #0466c8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,14 +147,14 @@ header nav a:active {
 
 .head-page-container .buttons .resume-button a:hover,
 .head-page-container .buttons .explore-button a:hover {
-  color: #6715ff;
+  color: #0466c8;
   background: #dbdbdb;
   border-radius: 10px;
 }
 
 .head-page-container .buttons .resume-button a:active,
 .head-page-container .buttons .explore-button a:active {
-  color: #212121;
+  color: #023e7d;
 }
 
 .head-page-container h1 {
@@ -199,7 +200,6 @@ header nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*background-color: palevioletred;*/
 }
 
 .about-container .title {
@@ -213,10 +213,10 @@ header nav a:active {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 250px;
+  max-width: 230px;
   height: 100px;
   /*background-color: blue;*/
-  color: #5d13e7;
+  color: #0466c8;
   font-size: clamp(20px, 3vw, 35px);
   /*background-color: peru;*/
 }
@@ -238,19 +238,20 @@ header nav a:active {
           align-items: center;
   text-align: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 770px;
   height: 400px;
   /*background-color: red;*/
 }
 
 .about-container .parag p {
+  text-align: left;
   width: 75%;
   font-size: clamp(16px, 1vw, 16px);
   /*background-color: green;*/
 }
 
 .about-container .parag b {
-  color: #5d13e7;
+  color: #0466c8;
   font-weight: 600;
 }
 
@@ -259,9 +260,9 @@ header nav a:active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   margin: 0 auto;
   width: 100%;
   height: 100vh;
@@ -285,14 +286,15 @@ header nav a:active {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 250px;
+  max-width: 230px;
   height: 100px;
   /*background-color: blue;*/
-  color: #5d13e7;
+  color: #0466c8;
   font-size: clamp(20px, 3vw, 35px);
 }
 
 .work-container .parag {
+  text-align: right;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,9 +309,8 @@ header nav a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: left;
   width: 100%;
-  max-width: 800px;
+  max-width: 770px;
   height: 400px;
 }
 
@@ -354,7 +355,7 @@ header nav a:active {
   max-width: 250px;
   height: 100px;
   /*background-color: blue;*/
-  color: #5d13e7;
+  color: #0466c8;
   font-size: clamp(20px, 3vw, 35px);
 }
 
@@ -379,8 +380,8 @@ header nav a:active {
 }
 
 .project-container .parag #project-id-first {
-  background: -webkit-gradient(linear, left top, left bottom, from(#5d13e7), to(#5d13e7a9)), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
-  background: linear-gradient(#5d13e7, #5d13e7a9), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
+  background: -webkit-gradient(linear, left top, left bottom, from(#0466c856), to(#0466c8a1)), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
+  background: linear-gradient(#0466c856, #0466c8a1), url("https://cdn.discordapp.com/attachments/862471437474594846/863065584250257438/unknown.png");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -439,7 +440,7 @@ header nav a:active {
   max-width: 250px;
   height: 100px;
   /*background-color: blue;*/
-  color: #5d13e7;
+  color: #0466c8;
   font-size: clamp(20px, 3vw, 35px);
 }
 
@@ -476,7 +477,7 @@ header nav a:active {
 }
 
 .contact-container .parag .contact-button {
-  background: #5d13e7;
+  background: #0466c8;
   width: 120px;
   height: 45px;
   border-radius: 10px;
@@ -498,12 +499,12 @@ header nav a:active {
 }
 
 .contact-container .parag .contact-button a:hover {
-  background: #5010c7;
+  background: #0466c8;
   border-radius: 10px;
 }
 
 .contact-container .parag .contact-button a:active {
-  background: #3810c7;
+  background: #0466c8;
   border-radius: 10px;
 }
 
@@ -514,9 +515,14 @@ header nav a:active {
 }
 
 footer {
-  margin: 0 auto;
-  background-color: #5010c7;
-  width: 100%;
-  height: 15px;
+  position: relative;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0671dd), to(#023e7d));
+  background: linear-gradient(#0671dd, #023e7d);
+  width: 100vw;
+  height: 100vh;
 }
 /*# sourceMappingURL=styles.css.map */
