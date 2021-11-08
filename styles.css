@@ -16,6 +16,11 @@ html, * {
      background: var(--bg-color);
      font-family: var(--font-roboto);
  }
+
+::selection {
+    color: #cbc9dd;
+    background: #292929;
+}
  
  #pageHeader {
      margin: 2vw auto;
