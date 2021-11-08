@@ -14,7 +14,6 @@ html, * {
      height: 100vh;
      background: var(--bg-color);
      font-family: var(--font-roboto);
-     color: #fff;
  }
  
  #pageHeader {
