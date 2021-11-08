@@ -132,6 +132,6 @@ html, * {
  }
  
  article > div > a:hover {
-     color: #fff;
+     color: #000;
      background: #cbc9dd;
  }  
