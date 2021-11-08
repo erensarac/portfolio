@@ -42,6 +42,7 @@ html, * {
  }
  
  #headerTitle > h1 {
+     color: #fff;
      display: inline-block;
          font-family: var(--font-roboto);
          font-weight: 700;
