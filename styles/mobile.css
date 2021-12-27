@@ -27,3 +27,24 @@
         justify-content: center;
     }
 }
+@media screen and (max-width: 500px){
+    html {
+        font-size: 12px;
+    }
+    body {
+        width: 90vw;
+    }
+}
+@media screen and (max-width: 350px){
+    html {
+        font-size: 10px;
+    }
+    body {
+        width: 95vw;
+    }
+}
+@media screen and (min-width: 1400px){
+    html {
+        font-size: 18px;
+    }
+}
