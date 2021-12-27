@@ -27,6 +27,7 @@ body {
     padding: 10px;
     width: 100%;
     height: 80px;
+    border-bottom: 1px solid #40514e30;
 }
 
 #header-title {
@@ -54,6 +55,10 @@ body {
     font-size: 1.3rem;
     justify-content: end;
     gap: 30px;
+}
+#header-nav ol li i {
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 #header-nav ol li a:hover {
