@@ -1,12 +1,14 @@
-var tabMenu = document.getElementById("tabMenu"),
+{
+    let tabMenu = document.getElementById("tabMenu"),
     tabMenuBg = document.getElementById("tabMenuBg");
 
-function openTabMenu() {
+    function openTabMenu() {
     tabMenu.style.display = "flex";
     tabMenuBg.style.display = "block";
-}
-
-function closeTabMenu() {
+    }
+    
+    function closeTabMenu() {
     tabMenu.style.display = "none";
     tabMenuBg.style.display = "none";
+    }
 }
