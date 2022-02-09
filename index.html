@@ -1,39 +1,66 @@
 <!doctype html>
+<!-- Bu web sitesinin kaynak kodlarına Github üzerinden ulaşabilirsiniz. -->
+<!-- Tasarim ve Kodlama - Eren Sarac. -->
 <html>
 <head>
-    <title>sarac.dev</title>
+    <title>erensarac | Frontend Dev.</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <aside id="header-title">
-            <h1 id="page-title" translate="no">erensarac</h1>
-        </aside>
-        <nav>
-            <a class="nav-links" href="resume.pdf">Resume</a>
-            <a class="nav-links" href="portfolio.html">Porfolio</a>
-            <a class="nav-links" href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h1 class="highlighted-title">Frontend Developer</h2>
-                <h2 class="main-heading">Im making things about web development.</h2>
-                <p class="section-description">You can text my social media accounts below to reach me. I'll get back as fast as I can.</p>
-                <div class="social-links">
-                    <a href="https://github.com/erensarac" target="_blank">GitHub</a>
-                    <a href="https://linkedin.com/in/eren-sarac/" target="_blank">LinkedIn</a>
-                    <a href="https://twitter.com/erensaracx" target="_blank">Twitter</a>
-                    <a href="https://instagram.com/erensaracx" target="_blank">Instagram</a>
-                    <a href="mailto:esarac@outlook.com.tr" target="_blank">Mail</a>
-                </div>
-        </section>
+    <main id="profile-card">
+        <div id="standart" class="fd-column fx-center p-15">
+            <figure></figure>
+            <h1>erensarac<span>Frontend Developer</span></h1>
+            <div id="social-links" class="fd-row fx-center">
+                <a href="#"> <img class="icons" src="/src/icons/github.svg" alt="Github Icon"> </a>
+                <a href="#"> <img class="icons" src="/src/icons/linkedin.svg" alt="Linkedin Icon"> </a>
+                <a href="#"> <img class="icons" src="/src/icons/twitter.svg" alt="Twitter Icon"> </a>
+                <a href="#"> <img class="icons" src="/src/icons/mail.svg" alt="Mail Icon"> </a>
+            </div>
+            <button>Resume</button>
+        </div>
+        <div id="contents" class="fd-column p-15">
+            <ul class="content">
+                <h2>Shelf</h2>
+                <li>Personel Website</li>
+                <li>Spotify Web Player Clone</li>
+                <li>Twitter Clone</li>
+                <li>Twitch Clone</li>
+                <li>Lucky Wheel</li>
+                <li>ToDo App</li>
+            </ul>
+            <ul class="content">
+                <h2>Lorem Ipsum</h2>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <ul class="content">
+                <h2>Lorem Ipsum</h2>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <ul class="content reposotery">
+                <h2>Lorem Ipsum</h2>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
     </main>
     <script src="https://kit.fontawesome.com/4953efbd73.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
