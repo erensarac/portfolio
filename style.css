@@ -1,1 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap'); html, * { box-sizing: border-box; margin: 0; padding: 0; text-decoration: none; list-style-type: none; color: #606986; font-family: Inter, sans-serif; font-size: 16px; } ::selection {background-color: rgba(36, 49, 78, 0.3)} body { margin: auto; background-color: #FFF; width: 60%; padding: 20px 30px; transition: all 1s; --mark-color: #30E3CA; --text-color: #0b0c11; --selection-color:rgba(36, 49, 78, 0.3); } .light { --text-color: #cfcfcf; --mark-color: #55e6af; --selection-color:rgba(111, 230, 220, 0.3); background-color: #111725; } section { text-align: left; display: flex; flex-direction: column; padding: 15px } #main-header { display: flex; justify-content: space-between; align-items: center; padding: 10px; width: 100%; height: 80px; border-bottom: 1px solid #40514e30; } #header-title-container { padding: 15px; display: inline-block } #page-title { color: var(--text-color); font-size: 1.5rem; font-weight: 500 } #navbar { display: inline; text-align: end; padding: 15px; gap: 20px } #navbar i { cursor:pointer; margin-left: 10px; margin-right: 10px; font-size: 2rem; background-color: var(--selection-color); color: var(--text-color); padding: 10px; border-radius: 10px; } .nav-link {margin: 10px} .nav-link:hover {color:var(--mark-color)} #theme-icon { position: fixed; right: 2vw; bottom: 2vw; } #main-title { margin: 35px 0 0 0; color: var(--mark-color); font-size: 2rem; font-weight: 400 } .main-heading { color: var(--text-color); margin-top:5px; font-size:4rem; font-weight:600 } .section-description { margin-top:25px; font-size:1.5rem; font-weight:300 } .social-links { margin-top:25px; height:80px } .social-links a i { color: var(--text-color); padding:15px; margin:15px; font-size:2rem } .social-links a i:hover { background-color:#40514E20; color:var(--mark-color); border-radius:30px } .social-links a:active {background-color:#40514E50} @media (max-width: 1000px){body {width: 80%}} @media (max-width: 768px){ html {font-size: 15px} #page-title { padding: 15px; width: 100%; display: inline-block; text-align: center } #main-title {font-size:3rem} #navbar {display:none} #social-links { display: flex; justify-content: center } #navbar:nth-child(1) {display: inline-block} } @media (max-width: 600px){ html {font-size: 12px} body {width:90%} } @media (max-width: 500px){ html {font-size: 12px} body {width:95%} } @media (max-width: 350px){ html {font-size:10px} body {width: 100%} } @media (min-width: 1400px){html {font-size:18px}}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+::selection {background-color: rgba(0, 0, 0, 0.1)}
+
+:root {
+    --dark : #212529;
+    --blue : #3755be;
+    --turquoise : rgb(26, 188, 156) ;
+    --green-sea : rgb(22, 160, 133) ;
+    --sun-flower : rgb(241, 196, 15) ;
+    --orange : rgb(243, 156, 18) ;
+    --emerald : rgb(46, 204, 113) ;
+    --nephritis : rgb(39, 174, 96) ;
+    --carrot : rgb(230, 126, 34) ;
+    --pumpkin : rgb(211, 84, 0) ;
+    --peter-river : rgb(52, 152, 219) ;
+    --belize-hole : rgb(41, 128, 185) ;
+    --alizarin : rgb(231, 76, 60) ;
+    --pomegranate : rgb(192, 57, 43) ;
+    --amethyst : rgb(155, 89, 182) ;
+    --wisteria : rgb(142, 68, 173) ;
+    --clouds : rgb(236, 240, 241) ;
+    --silver : rgb(189, 195, 199) ;
+    --wet-asphalt : rgb(52, 73, 94) ;
+    --midgnight-blue : rgb(44, 62, 80) ;
+    --asbestos : rgb(127, 140, 141) ;
+}
+
+body {
+    font-size: 15px;
+    font-family: Inter, sans-serif;
+    margin: auto;
+    background-color: #fff;
+    padding-right: 20vw;
+    padding-left: 20vw;
+    padding-top: 20px;
+}
+
+section {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+#header-title-container {
+    padding: 15px;
+    display: inline-block
+}
+
+#page-title {
+    color: #2f479e;
+    font-size: 1.5rem;
+    font-weight: 300
+}
+
+nav {
+    display: inline;
+    text-align: end;
+    padding: 15px;
+    gap: 20px
+}
+
+.nav-links {
+    color: var(--blue);
+    opacity: 70%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+.nav-links:hover {opacity: 100%}
+
+.highlighted-title {
+    padding-top: 40px;
+    padding-bottom: 5px;
+    color: var(--blue);
+    opacity: 90%;
+    font-size: 2rem;
+    font-weight: 300
+}
+
+.highlighted-title:hover {
+    opacity: 100%;
+}
+
+.main-heading {
+    color: var(--midgnight-blue);
+    margin-top:5px;
+    font-size: 4rem;
+    font-weight:600
+}
+
+.section-description {
+    color: var(--wet-asphalt);
+    margin-right: 30%;
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-weight: 300
+}
+
+.social-links {
+    margin-top:25px;
+    height:80px;
+    margin-top: 35px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #212529;
+    padding-right: 35px;
+    font-size: 20px;
+    position: relative;
+}
+
+.social-links a:hover {
+    color: #2f479e;
+}
+
+.social-links a:hover::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url(/src/images/arrow-up-right.svg);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
