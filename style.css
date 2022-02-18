@@ -114,6 +114,10 @@ li {
     justify-content: center;
     align-items: center;
 }
+.fx-sp-around {
+    justify-content: space-around;
+    align-items: center;
+}
 .fx-left {
     justify-content: center;
     align-items: left;
