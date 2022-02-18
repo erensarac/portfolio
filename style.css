@@ -31,20 +31,21 @@ main {
     justify-content: center;
     border-radius: 20px;
 }
-#social-links {
-    margin-top: 20px;
-    gap: 15px;
+#profile-component {
+    width: 100%;
 }
 .icons {
     width: 24px;
-    fill: rgb(201, 201, 201);
+    stroke: #ffffff;
+}
+.icons:Hover {
+    stroke: #34ff6d;
 }
 #standart {
     width: 40%;
     height: 100%;
-    text-align: center; /*//*/
+    text-align: center;
 }
-
 figure {
     background-color: #fff;
     width: 130px;
