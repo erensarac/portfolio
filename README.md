@@ -1,3 +1,6 @@
 ## Personel Website
-it's my personel website with html and css
-[Demo ↗️](https://erensarac.github.io/erensarac-personel-website/)
+it's my personel website with html and css.
+
+```html
+[Demo Link ↗️](https://erensarac.github.io/erensarac-personel-website/)
+```
