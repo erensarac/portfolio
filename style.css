@@ -9,9 +9,9 @@ body {
     padding-left: 10vw;
     padding-right: 10vw;
     font-size: 15px;
-    font-family: 'Roboto Mono', monospace;
-    background-color: #000000;
-    color: #FFC8C8;
+    font-family: 'Rubik', sans-serif;
+    background-color: #23232c;
+    color: #fff;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -19,92 +19,94 @@ body {
     justify-content: center;
     align-items: center;
 }
-p {
-    color:  gray;
-    margin-top: 10px;
+aside {
+    padding: 10px;
 }
-main {
+header {
+    width: 70%;
+    padding: 20px;
+}
+#profile-card {
+    padding: 15px 50px;
     width: 100%;
-    height: 500px;
     display: flex;
+    gap: 20px;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    border-radius: 20px;
 }
-#profile-component {
-    width: 100%;
+#profile-picture {
+    background-color: #21212b;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+a {
+    text-decoration: none;
 }
 .icons {
-    margin-left: 5px;
-    margin-right: 5px;
-    width: 24px;
-    stroke: #ffffff;
+    padding: 5px;
+    width: 32px;
+    stroke: #999;
+    text-decoration: none;
+    transition: .3s;
 }
 .icons:Hover {
-    stroke: #34ff6d;
+    transform: rotate(-5deg);
+    stroke: #fbfd44;
 }
-#standart {
-    width: 40%;
-    height: 100%;
-    text-align: center;
+.icons:active {
+    transform: rotate(5deg);
 }
-figure {
-    background-color: #fff;
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-}
-h1 {
-    font-size: 30px;
-    color: #34ff6d;
-    font-weight: 500;
-}
-span {
-    color: #ffffff90;
-    font-size: 18px;
-    display: block;
-}
-button {
-    cursor: pointer;
-    color: #000;
-    font-weight: 500;
-    font-size: 13px;
-    border: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-weight: 500;
-    border-radius: 5px;
-    font-family: 'Roboto Mono', monospace;
-    border-bottom: 2px solid transparent;
-}
-button:hover {
-    background-color: #34ff6d;
-}
-button:active {
-    border-bottom: 0;
-    border-top: 2px solid transparent;
-}
-.fd-column {
+#social-links {
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
-}
-.fd-row {
-    display: flex;
+    gap: 10px;
     flex-direction: row;
-}
-.fx-center {
     justify-content: center;
     align-items: center;
 }
-.fx-sp-around {
-    justify-content: space-around;
-    align-items: center;
+#user-name {
+    font-size: 30px;
+    color: #fbfd44;
+    font-weight: 400;
 }
-.fx-left {
-    justify-content: center;
-    align-items: left;
+#user-title {
+    display: block;
+    font-size: 18px;
+    color: #999;
 }
-.p-15 {
-    padding: 15px;
+#user-bio {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #eeebeb;
+    font-weight: 300;
+}
+#button {
+    border: 0;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #000;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 400;
+    border-radius: 5px;
+    background-color: #999;
+    transition: .3s ease-in-out;
+}
+#button:hover {
+    font-size: 13px;
+    margin-top: 15px;
+    transform: rotate(-2deg);
+    background-color: #fbfd44;
+}
+#button:active {
+    font-size: 15px;
+    margin-top: 15px;
+    transform: rotate(2deg);
 }
