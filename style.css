@@ -10,7 +10,7 @@ body {
     padding-right: 10vw;
     font-size: 15px;
     font-family: 'Rubik', sans-serif;
-    background-color: #23232c;
+    background-color: #23232c; /* #21212b */
     color: #fff;
     width: 100%;
     min-height: 100vh;
@@ -18,12 +18,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: .5s;
 }
 aside {
     padding: 10px;
 }
 header {
-    width: 70%;
     padding: 20px;
 }
 #profile-card {
@@ -82,6 +82,24 @@ a {
     color: #eeebeb;
     font-weight: 300;
 }
+/* .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fbfd44;
+    border-radius: 10px;
+} */
+/* #button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+} */
 #button {
     border: 0;
     cursor: pointer;
@@ -96,8 +114,11 @@ a {
     font-family: inherit;
     font-weight: 400;
     border-radius: 5px;
-    background-color: #999;
+    background-color: rgb(240, 240, 240);
     transition: .3s ease-in-out;
+}
+#button a {
+    color: #000;
 }
 #button:hover {
     font-size: 13px;
@@ -109,4 +130,41 @@ a {
     font-size: 15px;
     margin-top: 15px;
     transform: rotate(2deg);
+}
+
+@media (max-width:1068px){
+    body {
+        padding-left: 5vw;
+        padding-left: 5vw;
+    }
+}
+@media (max-width:1024px){
+    body {
+        padding-left: 0;
+        padding-left: 0;
+    }
+}
+@media (max-width:768px){
+    body {
+        text-align: center;
+    }
+    #profile-card {
+        flex-direction: column;
+    }
+}
+@media (max-width:500px){
+    #user-name {
+        font-size: 23px;
+    }
+    #user-title {
+        font-size: 18px;
+    }
+    #user-bio {
+        font-size: 15px;
+    }
+}
+@media (max-width:350px){
+    #profile-card {
+        padding: 0;
+    }
 }
