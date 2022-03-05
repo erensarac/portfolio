@@ -1,2 +1,2 @@
-### [Demo Link ↗️](https://erensarac.github.io/personel-website/)
+### [Demo Link ↗️](https://erensarac.github.io/homepage/)
 
