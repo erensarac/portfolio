@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    background-color: #f7f7f7;
+    color: #121212;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.app {
+    padding: 2vw 10vw;
+    display: grid;
+    place-items: center;
+    gap: 20px;
+
+    a {
+        color: initial;
+        text-decoration: none;
+    }
+}
+.profile-component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .profile-picture {
+        margin-bottom: 10px;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 100%;
+        border: 1px solid black;
+    }
+    h1 {
+        color: #212121;
+    }
+    p {
+        font-weight:500;
+        font-size: 1rem;
+        color: #212121;
+        opacity: 50%;
+    }
+    .desc {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        div, a {
+            color: #888;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .5s;
+        }
+        .icons {
+            margin-left: 15px;
+            margin-right: 5px;
+            font-size: 1.5rem;
+        }
+        a:hover {
+            color: rgb(98, 207, 107);
+        }
+    }
+}
+
+.bio-component {
+    text-align: left;
+    padding: 10px;
+    p {
+        font-size: 1.25rem;
+        text-indent: 2vw;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
