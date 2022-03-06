@@ -1,170 +1,173 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    padding-left: 10vw;
-    padding-right: 10vw;
-    font-size: 15px;
-    font-family: 'Rubik', sans-serif;
-    background-color: #23232c; /* #21212b */
-    color: #fff;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-}
-aside {
-    padding: 10px;
-}
-header {
-    padding: 20px;
-}
-#profile-card {
-    padding: 15px 50px;
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-#profile-picture {
-    background-color: #21212b;
-    width: 200px;
-    height: 200px;
-    border-radius: 10px;
-}
-a {
-    text-decoration: none;
-}
-.icons {
-    padding: 5px;
-    width: 32px;
-    stroke: #999;
-    text-decoration: none;
-    transition: .3s;
-}
-.icons:Hover {
-    transform: rotate(-5deg);
-    stroke: #fbfd44;
-}
-.icons:active {
-    transform: rotate(5deg);
-}
-#social-links {
-    margin-top: 20px;
-    display: flex;
-    gap: 10px;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-#user-name {
-    font-size: 30px;
-    color: #fbfd44;
-    font-weight: 400;
-}
-#user-title {
-    display: block;
-    font-size: 18px;
-    color: #999;
-}
-#user-bio {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #eeebeb;
-    font-weight: 300;
-}
-/* .links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: #fbfd44;
-    border-radius: 10px;
-} */
-/* #button-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-} */
-#button {
-    border: 0;
-    cursor: pointer;
-    margin-top: 10px;
-    color: #000;
-    width: 100%;
-    padding-top: 10px;
-    padding-right: 25px;
-    padding-bottom: 10px;
-    padding-left: 25px;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: 400;
-    border-radius: 5px;
-    background-color: rgb(240, 240, 240);
-    transition: .3s ease-in-out;
-}
-#button a {
-    color: #000;
-}
-#button:hover {
-    font-size: 13px;
-    margin-top: 15px;
-    transform: rotate(-2deg);
-    background-color: #fbfd44;
-}
-#button:active {
-    font-size: 15px;
-    margin-top: 15px;
-    transform: rotate(2deg);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (max-width:1068px){
-    body {
-        padding-left: 5vw;
-        padding-left: 5vw;
-    }
+body {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  background-color: #f7f7f7;
+  /* #21212b */
+  color: #121212;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
-@media (max-width:1024px){
-    body {
-        padding-left: 0;
-        padding-left: 0;
-    }
+
+.app {
+  padding: 2vw 10vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  gap: 20px;
 }
-@media (max-width:768px){
-    body {
-        text-align: center;
-    }
-    #profile-card {
-        flex-direction: column;
-    }
+
+.app a {
+  color: initial;
+  text-decoration: none;
 }
-@media (max-width:500px){
-    #user-name {
-        font-size: 23px;
-    }
-    #user-title {
-        font-size: 18px;
-    }
-    #user-bio {
-        font-size: 15px;
-    }
+
+.profile-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media (max-width:350px){
-    #profile-card {
-        padding: 0;
-    }
+
+.profile-component .profile-picture {
+  margin-bottom: 10px;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+  border: 1px solid black;
 }
+
+.profile-component h1 {
+  color: #212121;
+}
+
+.profile-component p {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #212121;
+  opacity: 50%;
+}
+
+.profile-component .desc {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.profile-component .desc div, .profile-component .desc a {
+  color: #888;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.profile-component .desc .icons {
+  margin-left: 15px;
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.profile-component .desc a:hover {
+  color: #62cf6b;
+}
+
+.profile-component .button {
+  cursor: pointer;
+  border: 0;
+  margin-top: 10px;
+  color: #000;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: #121212;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.profile-component .button a {
+  text-decoration: none;
+  color: #000;
+}
+
+.profile-component .button:hover {
+  margin-top: 15px;
+  background-color: #fbfd44;
+}
+
+.profile-component .button:hover > a::after {
+  content: "";
+  width: 100%;
+  background: url(./source/icons/arrow-up-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile-component .button:active {
+  margin-bottom: 15px;
+}
+
+.bio-component {
+  text-align: left;
+  padding: 10px;
+}
+
+.bio-component p {
+  font-size: 1.25rem;
+  text-indent: 2vw;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/*# sourceMappingURL=style.css.map */
