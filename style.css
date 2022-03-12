@@ -13,7 +13,6 @@ body {
   font-size: 15px;
   font-family: 'Rubik', sans-serif;
   background-color: #f7f7f7;
-  /* #21212b */
   color: #121212;
   width: 100%;
   min-height: 100vh;
@@ -115,52 +114,20 @@ body {
   font-size: 1.5rem;
 }
 
-.profile-component .desc a:hover {
-  color: #62cf6b;
+.profile-component .desc a[href$="erensarac"]:hover {
+  color: #50321e;
 }
 
-.profile-component .button {
-  cursor: pointer;
-  border: 0;
-  margin-top: 10px;
-  color: #000;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  font-size: 16px;
-  font-family: inherit;
-  font-weight: 400;
-  border-radius: 5px;
-  background-color: #121212;
-  -webkit-transition: .5s;
-  transition: .5s;
+.profile-component .desc a[href$="eren-sarac"]:hover {
+  color: #144b6e;
 }
 
-.profile-component .button a {
-  text-decoration: none;
-  color: #000;
-}
-
-.profile-component .button:hover {
-  margin-top: 15px;
-  background-color: #fbfd44;
-}
-
-.profile-component .button:hover > a::after {
-  content: "";
-  width: 100%;
-  background: url(./source/icons/arrow-up-right.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.profile-component .button:active {
-  margin-bottom: 15px;
+.profile-component .desc a[href$="erensaracx"]:hover {
+  color: #6ec8ff;
 }
 
 .bio-component {
-  text-align: center;
+  text-align: left;
   padding: 10px;
 }
 
