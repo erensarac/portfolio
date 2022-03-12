@@ -8,13 +8,13 @@
 body {
     padding-left: 10vw;
     padding-right: 10vw;
+    padding-top: 50px;
     font-size: 15px;
     font-family: 'Rubik', sans-serif;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     transition: .5s;
 }
