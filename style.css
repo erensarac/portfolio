@@ -31,6 +31,34 @@ body {
   transition: .5s;
 }
 
+#loader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#loader .spinner {
+  border-left: 1vw solid #212121;
+  border-right: 1vw solid #212121;
+  border-top: 1vw solid #212121;
+  border-bottom: 1vw solid #999;
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
 .app {
   padding: 2vw 10vw;
   display: -ms-grid;
@@ -169,5 +197,27 @@ body {
   cursor: pointer;
   font-size: 2rem;
   border-radius: 10px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 /*# sourceMappingURL=style.css.map */
