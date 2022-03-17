@@ -8,15 +8,33 @@
 body {
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 50px;
     font-size: 15px;
     font-family: 'Rubik', sans-serif;
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    transition: .5s;
+}
+#loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
     transition: 1s;
+    .spinner {
+        border-left: 1vw solid #212121;
+        border-right: 1vw solid #212121;
+        border-top: 1vw solid #212121;
+        border-bottom: 1vw solid #999;
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+    }
 }
 .app {
     padding: 2vw 10vw;
@@ -92,7 +110,6 @@ body {
         opacity: 80%;
     }
 }
-// Theme //
 .light-theme {
     background-color: #fff;
     color: #121212;
@@ -115,5 +132,14 @@ body {
         cursor: pointer;
         font-size: 2rem;
         border-radius: 10px;
+    }
+}
+// Keyframes
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
