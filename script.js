@@ -1,7 +1,18 @@
 const pageBody = document.querySelector("body")
+const app = document.querySelector(".app")
 const themeIcon = document.querySelector("#theme-icon")
+const loader = document.querySelector("#loader")
+
+app.style.display = "none"
 
 document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(()=>{
+    loader.style.opacity = "0"
+  }, 2000)
+  setTimeout(()=>{
+    app.style.display = "block"
+    loader.remove()
+  }, 3000)
   if (localStorage.getItem("theme") === "dark")
   {
     makeDarkTheme()
