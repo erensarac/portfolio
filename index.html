@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-<body class="light-theme">
+<body>
     <main class="app">
         <header class="profile-component">
             <img class="profile-picture" src="./source/images/avatar.jpg" alt="Profile Picture">
@@ -44,9 +44,12 @@
         <section class="bio-component">
             <p>Hello it's Eren, live in Eskisehir. I'm student of Dumlupinar University Computer Programming. I discovered front-end web development while looking for a new adventure. I'm currently developing beginner level projects with javascript (ES6+) and markup languages (HTML5 & CSS3). Also im currently learning Vuejs and SQL.</p>
         </section>
+        <div id="theme-switcher">
+            <i id="theme-icon" class="ri-moon-line"></i>
+        </div>
     </main>
-    <div id="theme-switcher">
-        <i id="theme-icon" class="ri-moon-line"></i>
+    <div id="loader">
+        <div class="spinner"></div>
     </div>
     <script src="script.js"></script>
 </body>
