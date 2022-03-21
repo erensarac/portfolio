@@ -31,7 +31,6 @@ themeIcon.addEventListener("click", () => {
 })
 
 function makeDarkTheme(){
-  console.log("sa");
   themeIcon.classList.add("ri-sun-line")
   themeIcon.classList.remove("ri-moon-line")
   pageBody.classList.add("dark-theme")
@@ -40,7 +39,6 @@ function makeDarkTheme(){
 }
 
 function makeLightTheme(){
-  console.log("as");
   themeIcon.classList.add("ri-moon-line")
   themeIcon.classList.remove("ri-sun-line")
   pageBody.classList.add("light-theme")
