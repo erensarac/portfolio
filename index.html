@@ -1,53 +1,103 @@
 <!doctype html>
 <html>
+
 <head>
-    <title>erensarac === Jr. Frontend Developer</title>
+    <title>eren/portfolio</title>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Frontend Developer">
-    <meta name="keywords" content="eren, sarac, dev, frontend, developer, web, html, css, javascript">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Erenkan Sarac Portfolio">
+    <meta name="keywords"
+        content="erenkan, sarac, dev, frontend, developer, web, html, css, javascript, react, vuejs, sass">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
-    <main class="app">
-        <header class="profile-component">
-            <img class="profile-picture" src="./source/images/avatar.jpg" alt="Profile Picture">
-            <h1>Erenkan SARAÇ</h1>
-            <p>Junior Frontend Developer</p>
-            <div class="desc">
-                <div>
-                    <i class="icons ri-briefcase-line"></i>
-                    <span>Student</span>
-                </div>
-                <div>
-                    <i class="icons ri-map-pin-line"></i>
-                    <span>Eskisehir, Turkey</span>
-                </div>
-                <a href="https://www.github.com/erensarac" target="_blank">
-                    <i class="icons ri-github-line"></i>
-                    <span>@erensarac</span>
-                </a>
-                <a href="https://www.linkedin.com/in/eren-sarac" target="_blank">
-                    <i class="icons ri-linkedin-box-line"></i>
-                    <span>@eren-sarac</span>
-                </a>
-                <a href="https://twitter.com/erensaracx" target="_blank">
-                    <i class="icons ri-twitter-line"></i>
-                    <span>@erensaracx</span>
-                </a>
-            </div>
-        </header>
-        <section class="bio-component">
-            <p>Hello it's Eren, live in Eskisehir. I'm student of Dumlupinar University Computer Programming. I discovered front-end web development while looking for a new adventure. I'm currently developing beginner level projects with javascript (ES6+) and markup languages (HTML5 & CSS3). Also im currently learning Vuejs and SQL.</p>
-        </section>
-        <div id="theme-switcher">
-            <i id="theme-icon" class="ri-moon-line"></i>
+    <header>
+        <div id="anan1">
+            <a href="mailto:esarac@outlook.com.tr"> contact@erensarac.dev </a>
         </div>
+        <nav>
+            <a class="page-link" href="#about">About</a>
+            <a class="page-link" href="#">Projects</a>
+            <a class="page-link" href="#">Contact</a>
+        </nav>
+        <div id="anan2">
+            <button id="resume-btn" type="menu" class="button">Resume</button>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Erenkan Saraç</h1>
+            <p>Hello it's Eren, live in Eskisehir. I'm student of Dumlupinar University Computer Programming. I
+                discovered front-end web development while looking for a new adventure.</p>
+            <div id="social-container">
+                <a href="#">
+                    <button type="menu" class="social-btn"><i class="ri-linkedin-box-fill"></i>/ eren-sarac</button>
+                </a>
+                <a href="#">
+                    <button type="menu" class="social-btn"><i class="ri-github-fill"></i>/ erensarac</button>
+                </a>
+                <a href="#">
+                    <button type="menu" class="social-btn"><i class="ri-twitter-fill"></i>/ erensaracx</button>
+                </a>
+
+            </div>
+
+        </section>
+
+        <section id="projects">
+            <div class="card-title">
+                <h3>PROJECTS</h3>
+                <a class="view-all" href="#">View All</a>
+            </div>
+            <ul id="project-list" >
+                <li class="list-item">
+                    <div>
+                        <h5>FRONT-END</h5>
+                    </div>
+                    <div id="anan5">
+                        <h4>Todo List</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum eius enim. Accusamus, ex debitis!</p>
+                    </div>
+                    <div class="more-detail-container">
+                        <a href="#">More Details</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div>
+                        <h5>FRONT-END</h5>
+                    </div>
+                    <div id="anan5">
+                        <h4>Spotify Web Clone</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum eius enim. Accusamus, ex debitis!</p>
+                    </div>
+                    <div class="more-detail-container">
+                        <a href="#">More Details</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </li>
+                <li class="list-item">
+                    <div>
+                        <h5>FRONT-END</h5>
+                    </div>
+                    <div id="anan5">
+                        <h4>Password Generator</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe laborum eius enim. Accusamus, ex debitis!</p>
+                    </div>
+                    <div class="more-detail-container">
+                        <a href="#">More Details</a>
+                        <i class="ri-arrow-right-up-line"></i>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
